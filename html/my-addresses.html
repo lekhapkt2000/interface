@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Ansonika">
+    <title>Key Shop | Kênh phân phối thiết bị điện tử</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114"
+        href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144"
+        href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.custom.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- SPECIFIC CSS -->
+    <link href="css/user-detail.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <script src="api/include.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="api/header.js"></script>
+    <script src="api/my-addresses.js"></script>
+
+    <!-- select -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.js"></script>
+
+</head>
+
+
+<body>
+    <div id="page">
+
+
+        <div include-html="header.html"></div>
+        <!-- <div include-html="categorycart.html"></div> -->
+        <script>
+            includeHTML();
+        </script>
+
+        <!-- /header -->
+
+        <main>
+
+            <div class="container margin_30">
+                <div class="page_header">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="">Trang chủ</a></li>
+                            <li><a href="">Tài khoản</a>
+                            <li>
+                                <a href="">Địa chỉ</a>
+                        </ul>
+                    </div>
+                    <h1>Quản lý địa chỉ</h1>
+                    <hr>
+                </div>
+                <!-- /page_header -->
+                <div class="container emp-profile">
+                    <div class="btn-add-address"><a href="#collapseExample" class="btn_1" data-toggle="collapse"
+                            aria-expanded="false" aria-controls="collapseExample">Thêm
+                            địa chỉ</a>
+                    </div>
+
+                    <div class="collapse" id="collapseExample">
+                        <div class="col-lg-4 mt-2 card p-lg-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Họ & Tên*">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="phone" id="phone"
+                                    placeholder="Điện thoại*">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="address" id="address"
+                                    placeholder="Địa chỉ cụ thể*">
+                            </div>
+                            <div class="form-group">
+                                <select id="ward" class="form-control" required="">
+                                    <option value="0">Chọn Phường/Xã</option>
+                                </select>
+                            </div>
+                            <div class="clearfix add_bottom_15">
+                                <div class="checkboxes float-left">
+                                    <label class="container_check">Đặt làm mặc định
+                                        <input type="checkbox" id="is-default">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="text-center"><input type="button" value="Lưu" class="btn_1 full-width"
+                                    id="add-address">
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade  active show" role="tabpanel" aria-labelledby="addresses-tab">
+                            <div class="row" id="addresses">
+                                <!-- <div class="col-md-6">
+                                    <div class="bg-white card addresses-item mb-4 border border-primary">
+                                        <div class="gold-members p-4">
+                                            <div class="media">
+                                                <div class="mr-3"><i class="icofont-ui-home icofont-3x"></i></div>
+                                                <div class="media-body">
+                                                    <h6 class="mb-1 text-secondary">Địa chỉ</h6>
+                                                    <p class="text-black">Khu phố 6 Phường Linh Trung, Thủ Đức</p>
+                                                    <p class="mb-0 text-black font-weight-bold"><a
+                                                            class="text-primary mr-3" data-toggle="modal"
+                                                            data-target="#add-address-modal" href="#"><i
+                                                                class="icofont-ui-edit"></i> Sửa</a> <a
+                                                            class="text-danger" data-toggle="modal"
+                                                            data-target="#delete-address-modal" href="#"><i
+                                                                class="icofont-ui-delete"></i> Xóa</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="bg-white card addresses-item mb-4 border border-primary">
+                                        <div class="gold-members p-4">
+                                            <div class="media">
+                                                <div class="mr-3"><i class="icofont-ui-home icofont-3x"></i></div>
+                                                <div class="media-body">
+                                                    <h6 class="mb-1 text-secondary">Địa chỉ</h6>
+                                                    <p class="text-black">Khu phố 6 Phường Linh Trung, Thủ Đức</p>
+                                                    <p class="mb-0 text-black font-weight-bold"><a
+                                                            class="text-primary mr-3" data-toggle="modal"
+                                                            data-target="#add-address-modal" href="#"><i
+                                                                class="icofont-ui-edit"></i> Sửa</a> <a
+                                                            class="text-danger" data-toggle="modal"
+                                                            data-target="#delete-address-modal" href="#"><i
+                                                                class="icofont-ui-delete"></i> Xóa</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- /container -->
+            </div>
+        </main>
+        <!--/main-->
+
+
+
+        <div id="toTop"></div><!-- Back to top button -->
+
+        <!-- COMMON SCRIPTS -->
+        <script src="js/common_scripts.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            // Client type Panel
+            $('input[name="client_type"]').on("click", function () {
+                var inputValue = $(this).attr("value");
+                var targetBox = $("." + inputValue);
+                $(".box").not(targetBox).hide();
+                $(targetBox).show();
+            });
+        </script>
+        <div include-html="footer.html"></div>
+        <!-- <div include-html="categorycart.html"></div> -->
+        <script>
+            includeHTML();
+        </script>
+        <!--/footer-->
+    </div>
+    <!-- page -->
+
+    <div id="toTop"></div><!-- Back to top button -->
+
+    <!-- COMMON SCRIPTS -->
+    <script src="js/common_scripts.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- SPECIFIC SCRIPTS -->
+    <script src="js/carousel-home.min.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Ansonika">
+	<title>Key Shop | Kênh phân phối thiết bị điện tử</title>
+	<script src="api/include.js"></script>
+	<!-- Favicons-->
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114"
+		href="img/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144"
+		href="img/apple-touch-icon-144x144-precomposed.png">
+
+	<!-- GOOGLE WEB FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="css/bootstrap.custom.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- SPECIFIC CSS -->
+	<link href="css/listing.css" rel="stylesheet">
+
+	<!-- YOUR CUSTOM CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="api/search.js"></script>
+	<script src="api/header.js"></script>
+</head>
+
+<body>
+
+	<div id="page" class="theia-exception">
+		<div include-html="header.html"></div>
+		<!-- <div include-html="categorycart.html"></div> -->
+		<script>
+			includeHTML();
+		</script>
+		<!-- /header -->
+
+		<main>
+			<div class="top_banner">
+				<div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0, 0, 0, 0.3)">
+					<div class="container">
+						<div class="breadcrumbs">
+							<ul>
+								<li><a href="#">Trang chủ</a></li>
+								<li><a href="#">Danh mục</a></li>
+								<li>Thiết bị âm thanh và phụ kiện</li>
+							</ul>
+						</div>
+						<h1>Thiết Bị Âm Thanh và Phụ Kiện</h1>
+					</div>
+				</div>
+				<img src="img/banner/flashsale.jpg" class="img-fluid" alt="">
+			</div>
+			<!-- /top_banner -->
+			<div id="stick_here"></div>
+			<div class="toolbox elemento_stick">
+				<div class="container">
+					<ul class="clearfix">
+						<li>
+							<div class="sort_select">
+								<select name="sort" id="sort">
+									<option value="popularity" selected="selected">Sắp xếp theo mức độ phổ biến</option>
+									<option value="rating">Sắp xếp theo xếp hạng</option>
+									<option value="date">Sắp xếp theo độ mới</option>
+									<option value="price">Sắp xếp theo giá: thấp tới cao</option>
+									<option value="price-desc">Sắp xếp theo giá: cao xuống thấp
+								</select>
+							</div>
+						</li>
+						<li>
+							<a href="#0"><i class="ti-view-grid"></i></a>
+							<a href="listing-row-1-sidebar-left.html"><i class="ti-view-list"></i></a>
+						</li>
+						<li>
+							<a href="#0" class="open_filters">
+								<i class="ti-filter"></i><span>Bộ Lọc</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /toolbox -->
+
+
+			<div class="container margin_30">
+
+				<div class="row">
+					<div class="col-lg-9">
+						<div class="row small-gutters" id=list_product>
+
+
+						</div>
+						<!-- /row -->
+						<div class="pagination__wrapper">
+							<ul class="pagination">
+								<!-- <li><a href="#0" class="prev" title="previous page">&#10094;</a></li>
+								<li>
+									<a href="#0" class="active">1</a>
+								</li>
+								<li>
+									<a href="#0">2</a>
+								</li>
+								<li>
+									<a href="#0">3</a>
+								</li>
+								<li>
+									<a href="#0">4</a>
+								</li>
+								<li><a href="#0" class="next" title="next page">&#10095;</a></li> -->
+							</ul>
+						</div>
+					</div>
+					<!-- /col -->
+
+					<aside class="col-lg-3" id="sidebar_fixed">
+						<div class="filter_col">
+							<div class="inner_bt"><a href="#" class="open_filters"><i class="ti-close"></i></a></div>
+							<div class="filter_type version_2">
+								<h4><a href="#filter_brand" data-toggle="collapse" class="opened">Thương hiệu</a></h4>
+								<div class="collapse show" id="filter_brand">
+									<ul class="brands">
+										<!-- <li>
+											<label class="container_check"> Apple <small>12</small>
+												<input type="checkbox" name="apple" value="17827">
+												<span class="checkmark"></span>
+											</label>
+										</li> -->
+									</ul>
+								</div>
+								<!-- /filter_type -->
+							</div>
+							<!-- /filter_type -->
+							<div class="filter_type version_2">
+								<h4><a href="#filter_price" data-toggle="collapse" class="opened">Giá (VND)</a></h4>
+								<div class="collapse show" id="filter_price">
+									<ul class="prices">
+										<li>
+											<label class="container_check">100.000 - 500.000<small>11</small>
+												<input type="checkbox" min="100000" max="500000">
+												<span class="checkmark"></span>
+											</label>
+										</li>
+										<li>
+											<label class="container_check">1.000.0000 - 5.000.0000<small>08</small>
+												<input type="checkbox" min="1000000" max="5000000">
+												<span class="checkmark"></span>
+											</label>
+										</li>
+										<li>
+											<label class="container_check">5.000.0000 - 10.000.0000<small>08</small>
+												<input type="checkbox" min="5000000" max="10000000">
+												<span class="checkmark"></span>
+											</label>
+										</li>
+										<li>
+											<label class="container_check">10.000.0000 - 20.000.0000
+												<small>08</small>
+												<input type="checkbox" min="100000000" max="20000000">
+												<span class="checkmark"></span>
+											</label>
+										</li>
+										<li>
+											<label class="container_check">Trên 20.000.0000<small>08</small>
+												<input type="checkbox" min="20000000" max="999999999">
+												<span class="checkmark"></span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- /filter_type -->
+							<div class="buttons">
+								<div id="apply" style="float: left; margin-right: 10px;"><a href="#0"
+										class="btn_1">Lọc</a></div>
+								<div id="reset"><a href="#0" class="btn_1 gray">Làm mới</a></div>
+							</div>
+						</div>
+					</aside>
+					<!-- /col -->
+				</div>
+				<!-- /row -->
+
+			</div>
+			<!-- /container -->
+		</main>
+		<!-- /main -->
+
+		<div include-html="footer.html"></div>
+		<!-- <div include-html="categorycart.html"></div> -->
+		<script>
+			includeHTML();
+		</script>
+		<!--/footer-->
+	</div>
+	<!-- page -->
+
+	<div id="toTop"></div><!-- Back to top button -->
+
+	<!-- COMMON SCRIPTS -->
+	<script src="js/common_scripts.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- SPECIFIC SCRIPTS -->
+	<script src="js/sticky_sidebar.min.js"></script>
+	<script src="js/specific_listing.js"></script>
+
+</body>
+
+</html>

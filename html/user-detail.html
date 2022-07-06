@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Ansonika">
+	<title>Key Shop | Kênh phân phối thiết bị điện tử</title>
+
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114"
+		href="img/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144"
+		href="img/apple-touch-icon-144x144-precomposed.png">
+
+	<!-- GOOGLE WEB FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="css/bootstrap.custom.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- SPECIFIC CSS -->
+	<link href="css/user-detail.css" rel="stylesheet">
+
+	<!-- YOUR CUSTOM CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+
+	<script src="api/include.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="api/header.js"></script>
+	<script src="api/user-detail.js"></script>
+
+</head>
+
+
+<body>
+	<div id="page">
+
+
+		<div include-html="header.html"></div>
+		<!-- <div include-html="categorycart.html"></div> -->
+		<script>
+			includeHTML();
+		</script>
+
+		<!-- /header -->
+
+		<main>
+
+			<div class="container margin_30">
+				<div class="page_header">
+					<div class="breadcrumbs">
+						<ul>
+							<li><a href="">Trang chủ</a></li>
+							<li><a href="">Tài khoản</a>
+							<li>
+								<a href="">Thông tin tài khoản</a>
+						</ul>
+					</div>
+					<h1>THÔNG TIN TÀI KHOẢN</h1>
+					<hr>
+				</div>
+				<!-- /page_header -->
+				<div class="container emp-profile">
+					<form method="post">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="profile-img">
+									<!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog"
+										alt="" /> -->
+									<img src="" alt="" />
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="profile-head">
+									<h5>
+
+									</h5>
+									<h6>
+
+									</h6>
+									<p class="proile-rating">THÔNG TIN CÁ NHÂN : <span></span></p>
+									<ul class="nav nav-tabs" id="myTab" role="tablist">
+										<li class="nav-item">
+											<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+												role="tab" aria-controls="home" aria-selected="true">Thông tin</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+												role="tab" aria-controls="profile" aria-selected="false">Mật khẩu</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="btn-save"><a href="#0" class="btn_1">Cập nhật</a></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="profile-work">
+									<p>Thông tin khác</p>
+									<a href="/html/my-orders.html">Sản phẩm yêu thích</a><br />
+									<a href="/html/my-orders.html">Đơn hàng của tôi</a><br />
+									<a href="/html/my-orders.html">Lịch sử đánh giá</a><br />
+									<a href="/html/my-addresses.html">Địa chỉ</a><br />
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="tab-content profile-tab" id="myTabContent">
+									<div class="tab-pane fade show active" id="home" role="tabpanel"
+										aria-labelledby="home-tab">
+										<div class="row mb-2">
+											<div class="col-md-6">
+												<label>Họ & Tên</label>
+											</div>
+											<div class="col-md-4">
+												<input type="text" class="form-control" name="name" id="name"
+													placeholder="Họ & Tên">
+											</div>
+										</div>
+										<div class="row mb-2">
+											<div class="col-md-6">
+												<label>Điện thoại</label>
+											</div>
+											<div class="col-md-4">
+												<input type="text" class="form-control" name="phone" id="phone"
+													placeholder="Điện thoại">
+											</div>
+										</div>
+										<div class="row mb-2">
+											<div class="col-md-6">
+												<label>Email</label>
+											</div>
+											<div class="col-md-4">
+												<input type="email" class="form-control" name="email" id="email"
+													placeholder="Email*">
+											</div>
+										</div>
+										<div class="row mb-2">
+											<div class="col-md-6">
+												<label>Giới tính</label>
+											</div>
+											<div class="col-md-4">
+												<label class="container_radio"
+													style="display: inline-block; margin-right: 15px;">Nam
+													<input type="radio" name="gender" checked="" value="male">
+													<span class="checkmark"></span>
+												</label>
+												<label class="container_radio"
+													style="display: inline-block; margin-right: 15px;">Nữ
+													<input type="radio" name="gender" value="female">
+													<span class="checkmark"></span>
+												</label>
+											</div>
+										</div>
+										<div class="row mb-2">
+											<div class="col-md-6">
+												<label>Ngày sinh</label>
+											</div>
+											<div class="col-md-4">
+												<input type="date" class="form-control" name="birth" id="birth">
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="profile" role="tabpanel"
+										aria-labelledby="profile-tab">
+										<div class="row mb-2">
+											<div class="col-md-6">
+												<label>Mật khẩu cũ</label>
+											</div>
+											<div class="col-md-4">
+												<input type="password" class="form-control" name="old-pass"
+													id="old-pass" placeholder="Nhập mật khẩu cũ">
+											</div>
+										</div>
+										<div class="row mb-2">
+											<div class="col-md-6">
+												<label>Mật khẩu mới</label>
+											</div>
+											<div class="col-md-4">
+												<input type="password" class="form-control" name="new-pass"
+													id="new-pass" placeholder="Nhập mật khẩu mới">
+											</div>
+										</div>
+										<div class="row mb-2">
+											<div class="col-md-6">
+												<label>Xác nhận</label>
+											</div>
+											<div class="col-md-4">
+												<input type="password" class="form-control" name="confirm-pass"
+													id="confirm-pass" placeholder="Xác nhận mật khẩu mới">
+											</div>
+										</div>
+										<div class="row mb-2">
+											<div class="col-md-6">
+												<div id="status"></div>
+											</div>
+											<div class="col-md-4">
+												<div class="btn-change-pass float-right"><a href="#0" class="btn_1">Đổi
+														mật
+														khẩu</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- /container -->
+			</div>
+		</main>
+		<!--/main-->
+
+
+
+		<div id="toTop"></div><!-- Back to top button -->
+
+		<!-- COMMON SCRIPTS -->
+		<script src="js/common_scripts.min.js"></script>
+		<script src="js/main.js"></script>
+
+		<script>
+			// Client type Panel
+			$('input[name="client_type"]').on("click", function () {
+				var inputValue = $(this).attr("value");
+				var targetBox = $("." + inputValue);
+				$(".box").not(targetBox).hide();
+				$(targetBox).show();
+			});
+		</script>
+		<div include-html="footer.html"></div>
+		<!-- <div include-html="categorycart.html"></div> -->
+		<script>
+			includeHTML();
+		</script>
+		<!--/footer-->
+	</div>
+	<!-- page -->
+
+	<div id="toTop"></div><!-- Back to top button -->
+
+	<!-- COMMON SCRIPTS -->
+	<script src="js/common_scripts.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- SPECIFIC SCRIPTS -->
+	<script src="js/carousel-home.min.js"></script>
+
+</body>
+
+
+</html>

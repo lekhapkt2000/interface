@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Ansonika">
+	<title>Key Shop | Kênh phân phối thiết bị điện tử</title>
+	<script src="api/include.js"></script>
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114"
+		href="img/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144"
+		href="img/apple-touch-icon-144x144-precomposed.png">
+
+	<!-- GOOGLE WEB FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="css/bootstrap.custom.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- SPECIFIC CSS -->
+	<link href="css/checkout.css" rel="stylesheet">
+
+	<!-- YOUR CUSTOM CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script src="api/checkout.js"></script>
+	<script src="api/header.js"></script>
+</head>
+
+<body>
+
+	<div id="page">
+
+
+		<div include-html="header.html"></div>
+		<!-- <div include-html="categorycart.html"></div> -->
+		<script>
+			includeHTML();
+		</script>
+		<!-- /header -->
+
+		<main class="bg_gray">
+
+
+			<div class="container margin_30">
+				<div class="page_header">
+					<div class="breadcrumbs">
+						<ul>
+							<li><a href="#">Trang chủ</a></li>
+							<li><a href="#">Giỏ hàng</a></li>
+							<li>Thanh toán & đặt hàng</li>
+						</ul>
+					</div>
+					<h1>Thanh toán & đặt hàng</h1>
+
+				</div>
+				<!-- /page_header -->
+				<div class="row" id="checkout-info">
+
+					<div class="col-lg-4 col-md-6">
+						<div class="step middle payments">
+							<h3>1. Chọn phương thức thanh toán</h3>
+							<ul>
+								<li>
+									<label class="container_radio">Thanh toán tiền mặt khi nhận hàng<a href="#0"
+											class="info" data-toggle="modal" data-target="#payments_method"></a>
+										<input type="radio" name="payment" value="cod" checked>
+										<span class="checkmark"></span>
+									</label>
+								</li>
+								<li>
+									<label class="container_radio">Ví MoMo<a href="#0" class="info" data-toggle="modal"
+											data-target="#payments_method"></a>
+										<input type="radio" name="payment" value="momo">
+										<span class="checkmark"></span>
+									</label>
+								</li>
+							</ul>
+							<div class="payment_info d-none d-sm-block">
+								<figure><img src="img/cards_all.svg" alt=""></figure>
+								<p></p>
+							</div>
+
+							<h6 class="pb-2">Địa chỉ giao hàng</h6>
+
+
+							<ul>
+								<li>
+									<label class="container_radio">Mặc định<a href="#0" class="info" data-toggle="modal"
+											data-target="#payments_method"></a>
+										<input type="radio" name="shipping" checked>
+										<span class="checkmark"></span>
+									</label>
+								</li>
+							</ul>
+
+						</div>
+						<!-- /step -->
+
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="step last">
+							<h3>2. Kiểm tra sản phẩm</h3>
+							<div class="box_general summary" id="order-summary">
+								<ul>
+								</ul>
+								<ul>
+									<li class="clearfix"><em><strong>Tổng tiền</strong></em> <span>...</span></li>
+									<li class="clearfix"><em><strong>Phí vận chuyển</strong></em> <span>...</span></li>
+									<li class="clearfix"><em><strong>Giảm giá</strong></em> <span>...</span></li>
+								</ul>
+								<div class="total clearfix">THÀNH TIỀN <span>...</span></div>
+								<div class="form-group">
+									<label class="container_check">Gửi thông báo qua địa chỉ email
+										<input id="mailer" name="mailer" type="checkbox" checked>
+										<span class="checkmark"></span>
+									</label>
+								</div>
+
+								<a href="#confirm" class="btn_1 full-width">Đặt hàng</a>
+							</div>
+							<!-- /box_general -->
+						</div>
+						<!-- /step -->
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</main>
+		<!--/main-->
+
+		<div include-html="footer.html"></div>
+		<!-- <div include-html="categorycart.html"></div> -->
+		<script>
+			includeHTML();
+		</script>
+		<!--/footer-->
+	</div>
+	<!-- page -->
+
+	<div id="toTop"></div><!-- Back to top button -->
+	<!-- Modal Payments Method-->
+	<div class="modal fade" id="payments_method" tabindex="-1" role="dialog" aria-labelledby="payments_method_title"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="payments_method_title">Payments Methods</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, oratio possim ius cu. Labore prompta nominavi sea ei. Sea no animal
+						saperet gloriatur, ius iusto ullamcorper ad. Qui ignota reformidans ei, vix in elit conceptam
+						adipiscing, quaestio repudiandae delicatissimi vis ei. Fabulas accusamus no has.</p>
+					<p>Et nam vidit zril, pri elaboraret suscipiantur ut. Duo mucius gloriatur at, in vis integre
+						labitur dolores, mei omnis utinam labitur id. An eum prodesset appellantur. Ut alia nemore mei,
+						at velit veniam vix, nonumy propriae conclusionemque ea cum.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- COMMON SCRIPTS -->
+	<script src="js/common_scripts.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+		// Other address Panel
+		$('#other_addr input').on("change", function () {
+			if (this.checked)
+				$('#other_addr_c').fadeIn('fast');
+			else
+				$('#other_addr_c').fadeOut('fast');
+		});
+	</script>
+
+</body>
+
+</html>
